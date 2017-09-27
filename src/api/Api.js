@@ -1,10 +1,8 @@
-// import 'whatwg-fetch';
-import fetchJsonp from 'fetch-jsonp';
-
+import 'whatwg-fetch';
 
 const Api = {
     getZhihuLatest() {
-        fetchJsonp('https://news-at.zhihu.com/api/4/news/latest')
+        fetch('https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20json%20where%20url%3D%22https%3A%2F%2Fnews-at.zhihu.com%2Fapi%2F4%2Fnews%2Flatest%22&format=json&diagnostics=true&callback=')
             .then(function(response) {
                 return response.json()
             }).then(function(json) {
