@@ -51,8 +51,10 @@ class MainLayout extends React.Component {
                             <Menu.Item key="8">Team 2</Menu.Item>
                         </SubMenu>
                         <Menu.Item key="9">
+                            <Link to='/Zhihu'>
                             <Icon type="file" />
                             <span>File</span>
+                            </Link>
                         </Menu.Item>
                     </Menu>
                 </Sider>

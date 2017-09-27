@@ -5,6 +5,7 @@ import enUS from 'antd/lib/locale-provider/en_US';
 import App from './App.js'
 import MainLayout from './MainLayout';
 import MainPage from './MainPage';
+import Zhihu from './Zhihu';
 
 class APPRouter extends Component{
 
@@ -15,6 +16,7 @@ class APPRouter extends Component{
                     <MainLayout>
                         <Route exact path="/" component={App}/>
                         <Route path="/app1" component={MainPage}/>
+                        <Route path="/zhihu" component={Zhihu}/>
                     </MainLayout>
                 </LocaleProvider>
             </Router>
