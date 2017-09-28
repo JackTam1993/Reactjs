@@ -24,6 +24,22 @@
   font-size: large;
 }
 
+.Zhihu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Zhihu-item-pic {
+  height:80%;
+  overflow: hidden;
+}
+
+.Zhihu-item-text {
+  height:20%;
+  display: block;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

@@ -53,7 +53,7 @@ class MainLayout extends React.Component {
                         <Menu.Item key="9">
                             <Link to='/Zhihu'>
                             <Icon type="file" />
-                            <span>File</span>
+                            <span>知乎</span>
                             </Link>
                         </Menu.Item>
                     </Menu>

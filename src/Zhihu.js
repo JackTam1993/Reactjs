@@ -1,12 +1,14 @@
 import { Api } from './api/Api';
-import React from 'react'
+import React from 'react';
+import ItemList from './ItemList';
 
 class Zhihu extends React.Component {
     constructor(props){
-        super(props)
+        super(props);
         this.state = {
-            data:''
-        }
+            data:[],
+            test:['123','1234']
+        };
     }
 
     componentDidMount() {
@@ -20,9 +22,7 @@ class Zhihu extends React.Component {
 
     render() {
         return (
-                <div>
-                    <span>1</span>
-                </div>
+            <ItemList data={this.state.data}/>
         )
     }
 }
