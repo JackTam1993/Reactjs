@@ -5,13 +5,17 @@ class Zhihu extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-
+            data:''
         }
     }
 
     componentDidMount() {
-        Api.getZhihuLatest();
-        // console.log(data);
+        Api.getZhihuLatest().then((result)=>{
+            this.setState({
+                data:result.query.results.json.stories
+            });
+        });
+
     }
 
     render() {
