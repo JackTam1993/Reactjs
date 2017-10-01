@@ -1,4 +1,4 @@
-import { Api } from './api/Api';
+import { Api } from '../api/Api';
 import React from 'react';
 
 class ZhihuNewsDetail extends React.Component {

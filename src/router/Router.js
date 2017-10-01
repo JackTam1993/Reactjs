@@ -2,11 +2,11 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import React, { Component } from 'react';
 import { LocaleProvider } from 'antd';
 import enUS from 'antd/lib/locale-provider/en_US';
-import App from '../App.js'
-import MainLayout from '../MainLayout';
-import MainPage from '../MainPage';
-import Zhihu from '../Zhihu';
-import ZhihuNewsDetail from '../ZhihuNewsDetail';
+import App from '../js/App.js'
+import MainLayout from '../js/MainLayout';
+import MainPage from '../js/MainPage';
+import Zhihu from '../js/Zhihu';
+import ZhihuNewsDetail from '../js/ZhihuNewsDetail';
 
 class APPRouter extends Component{
 

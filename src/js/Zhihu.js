@@ -1,4 +1,4 @@
-import { Api } from './api/Api';
+import { Api } from '../api/Api';
 import React from 'react';
 import ItemList from './ItemList';
 
